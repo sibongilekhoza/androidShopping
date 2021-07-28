@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin.AdminCategoryActivity">
+
+    <TextView
+        android:id="@+id/slogan_caategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Add New Product"
+        android:textAlignment="center"
+        android:textSize="26sp"
+        android:textStyle="bold"
+
+        />
+
+    <LinearLayout
+        android:id="@+id/linear1_category_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/slogan_caategory"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/toiletries"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/toiletries" />
+
+        <ImageView
+            android:id="@+id/produce"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/produce"
+
+            />
+
+        <ImageView
+            android:id="@+id/snacks"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/snack"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/liner20_category_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear1_category_layout"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        >
+        <ImageView
+            android:id="@+id/milk_cheese"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/milkcheese"
+
+            />
+
+        <ImageView
+            android:id="@+id/canned_food"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/cannedfood"
+
+            />
+        <ImageView
+            android:id="@+id/frozen_collage"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/frozen_collage"
+
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linear2_category_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/liner20_category_layout"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        >
+
+
+        <ImageView
+            android:id="@+id/medication"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/medication"
+
+            />
+        <ImageView
+            android:id="@+id/meatfish"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/meatfish"
+
+            />
+
+        <ImageView
+            android:id="@+id/drinks"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/drinks"
+
+            />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/linear3_category_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear2_category_layout"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        >
+
+
+        <ImageView
+            android:id="@+id/dressing"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:src="@drawable/dressings"
+
+            />
+        <ImageView
+            android:id="@+id/capture"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/capture"
+
+            />
+        <ImageView
+            android:id="@+id/cereals"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:src="@drawable/cereal"
+
+            />
+
+        <ImageView
+            android:id="@+id/bakery_bread"
+            android:layout_width="100dp"
+            android:layout_height="75dp"
+            android:src="@drawable/bakery_bread"
+
+            />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/maintain_edit_product_btn"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_above="@+id/check_orders_btn"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/purple_500"
+        android:text="Edit Product"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+
+
+        />
+
+    <Button
+        android:id="@+id/check_orders_btn"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_above="@+id/admin_logout_btn"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/purple_500"
+        android:text="Check New Orders"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+
+
+        />
+
+    <Button
+        android:id="@+id/admin_logout_btn"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="15dp"
+        android:background="@color/purple_500"
+        android:text="Logout"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+
+
+        />
+
+
+</RelativeLayout>
